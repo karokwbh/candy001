@@ -6,11 +6,12 @@
 //   [23, 71, 33, 82, 1] 印出 24
 
 function sumOfSmallestValues(arr) {
-  // 實作程式碼寫在這裡
+  const result = arr.sort((a, b) => a - b);
+  return result[0] + result[1];
 }
-
+  
 const list1 = [19, 5, 42, 2, 77]
 const list2 = [23, 15, 59, 4, 17]
-
+  
 console.log(sumOfSmallestValues(list1)) // 印出 7
 console.log(sumOfSmallestValues(list2)) // 印出 19
